@@ -1,6 +1,6 @@
 import React from "react";
 import "./Menubar.css";
-const Menubar = () => {
+const Menubar = (props) => {
     return(
         <div className="conatiner">
             <div className="row w-75 mx-auto">
@@ -8,7 +8,7 @@ const Menubar = () => {
                 <div className="col-md-10 menu-container d-flex justify-content-end">
                     <li className="items my-4 mx-2 px-3 btn btn-outline-success">Home</li>
                     <li className="items my-4 mx-2 px-3 btn btn-outline-success">Contact</li>
-                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Cart</li>
+                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Cart <sup>{props.count}</sup></li>
                     <li className="items my-4 mx-2 px-3 btn btn-outline-success">Login</li>
                 </div>
             </div>

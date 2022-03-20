@@ -11,11 +11,11 @@ const AllProducts = (props) => {
             .then(res=>res.json())
             .then(data=>setProducts(data))
     }, [products]);
-    console.log(products);
+    //console.log(products);
     return(
         <div>
             <h1>All Products</h1>
-            <div className="row container w-100 mx-auto">
+            <div className="row container w-100 mx-auto g-4">
             {products.map ((pd) => (
                     <SingleProduct setCartCount={setCartCount} key={pd.id} product={pd}></SingleProduct>
                 ))}

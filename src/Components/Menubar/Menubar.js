@@ -3,13 +3,13 @@ import "./Menubar.css";
 const Menubar = () => {
     return(
         <div className="conatiner">
-            <div className="row">
-                <div className="col-md-2 p-2">Logo</div>
+            <div className="row w-75 mx-auto">
+                <div className="col-md-2 px-3 my-4 btn btn-success">Logo</div>
                 <div className="col-md-10 menu-container d-flex justify-content-end">
-                    <li className="items me-4 p-2">Home</li>
-                    <li className="items me-4 p-2">Contact</li>
-                    <li className="items me-4 p-2">Cart</li>
-                    <li className="items me-4 p-2">Login</li>
+                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Home</li>
+                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Contact</li>
+                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Cart</li>
+                    <li className="items my-4 mx-2 px-3 btn btn-outline-success">Login</li>
                 </div>
             </div>
         </div>
